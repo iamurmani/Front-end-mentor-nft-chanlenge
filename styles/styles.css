@@ -1,0 +1,121 @@
+:root {
+    --soft-blue:hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --verdarkbluemainbg: hsl(217, 54%, 11%);
+    --verydarkbluecardbg: hsl(216, 50%, 16%);
+    --verydarkblueline : hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    background: var(--verdarkbluemainbg);
+    height: 100%;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+}
+
+h2 {
+    color: var(--white);
+    margin-top: 4%;
+}
+h2:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+p {
+    color: var(--soft-blue);
+    margin-top: 4%;
+    font-size: 18px;
+}
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    width: 20%;
+    background: var(--verydarkbluecardbg);
+    padding: 1%;
+    border-radius: 5%;
+}
+
+.cube-image {
+    max-width: 100%;
+    border-radius: 2%;
+}
+.cube-image:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.indication {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.indi, .duration {
+    display: flex;
+}
+.indi p {
+    color: var(--cyan);
+}
+
+.indi p, .duration p {
+    padding-left: 8px;
+}
+
+.indication img {
+    position: relative;
+    height: 18px;
+    top : 6px;
+}
+.line {
+    height: 1px;
+    background: var(--verydarkblueline);
+    margin-top: 4%;
+}
+
+.profile img {
+    max-width: 10%;
+    position : relative;
+    top: 4px;
+    border: 1px solid var(--white);
+    border-radius: 14px;
+}
+.profile {
+    position: relative;
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    gap: 5%;
+}
+
+.profile span {
+    color: var(--white);
+}
+
+.profile span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+@media (max-width:375px) {
+    .parent-container {
+        display: block;
+        margin: 9% 6%;
+    }
+    .container {
+        width: 100%;
+        padding: 4%;
+    }
+}
